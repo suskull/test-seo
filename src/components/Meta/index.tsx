@@ -2,15 +2,17 @@ import React, { ReactNode } from "react";
 import { Helmet as HelmetLib } from "react-helmet-async";
 // or import Head from next/head for Next.js
 
-const DOMAIN = "test-seo-git-master-suskull.vercel.app";
+const DOMAIN = window.location.host;
 const MAIN_KEYWORDS = "my website, tech, software, content";
+
+console.log(window.location);
 
 const DEFAULT_IMAGE_CARD =
   "https://images.unsplash.com/photo-1519929125787-88a2485dc4f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
 const DEFAULT_TITLE = "This is my website";
 const DEFAULT_DESCRIPTION = "This is the description of my website";
 
-const FAVICON_SOURCE = "test-seo-git-master-suskull.vercel.app/favicon.ico";
+const FAVICON_SOURCE = `${window.location.host}/favicon.ico`;
 
 const POSTFIX_TITLE = " - My website";
 
@@ -70,7 +72,6 @@ function Meta({
 
   return (
     <HelmetLib>
-      <html lang="en" />
       <title>{metaTitle}</title>
       <meta name="description" content={metaDesc} />
       <link rel="canonical" href={metaLink} />
