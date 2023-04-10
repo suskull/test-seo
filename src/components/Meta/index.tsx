@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { Helmet as HelmetLib } from "react-helmet-async";
 // or import Head from next/head for Next.js
 
-const DOMAIN = "https://mywebsite.com";
+const DOMAIN = "test-seo-git-master-suskull.vercel.app";
 const MAIN_KEYWORDS = "my website, tech, software, content";
 
 const DEFAULT_IMAGE_CARD =
@@ -10,7 +10,7 @@ const DEFAULT_IMAGE_CARD =
 const DEFAULT_TITLE = "This is my website";
 const DEFAULT_DESCRIPTION = "This is the description of my website";
 
-const FAVICON_SOURCE = "https://mywebsite.com/favicon.ico";
+const FAVICON_SOURCE = "test-seo-git-master-suskull.vercel.app/favicon.ico";
 
 const POSTFIX_TITLE = " - My website";
 
